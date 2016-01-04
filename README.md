@@ -4,6 +4,7 @@ Assignments implemented in this course
 Implemented a storage manager that allows read/writing of blocks to/from a file on disk
 # Buffer Manager:
 Implemented a buffer manager that manages a buffer of blocks in memory including reading/flushing to disk and block replacement (flushing blocks to disk to make space for reading new blocks from disk). Implemented LRU and FIFO page replacement strategy. The below additional points were also implemented:
+
 Multithreading: 
 
   a. Implemented the buffer manager program such that the program supports multithreading. 
@@ -26,6 +27,7 @@ Additional replacement strategy:
 
 # Record Manager: 
 Implement a simple record manager that allows navigation through records, and inserting and deleting records. The below additional points were also implemented:
+
 Primary key constraints:  
   
   a. Implemented the record manager with primary key constraints.
