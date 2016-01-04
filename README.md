@@ -6,8 +6,11 @@ Implemented a storage manager that allows read/writing of blocks to/from a file 
 Implemented a buffer manager that manages a buffer of blocks in memory including reading/flushing to disk and block replacement (flushing blocks to disk to make space for reading new blocks from disk). Implemented LRU and FIFO page replacement strategy. The below additional points were also implemented:
 Multithreading: 
   a. Implemented the buffer manager program such that the program supports multithreading. 
+  
   b. In order to implement Multithreading we used pthread.h which is a threading header used in linux systems. 
+  
   c. Used the BM_LOCK and BM_UNLOCK functions to lock and unlock the buffer in operation
+  
   d. Once the buffer is locked by the user pthread.h will help to manage the multithreads 
 
 Additional replacement strategy: 
