@@ -1,7 +1,9 @@
 # CS525-Advanced-Database-Organisation
 Assignments implemented in this course
-# Storage Manager: Implemented a storage manager that allows read/writing of blocks to/from a file on disk
-# Buffer Manager: Implemented a buffer manager that manages a buffer of blocks in memory including reading/flushing to disk and block replacement (flushing blocks to disk to make space for reading new blocks from disk). Implemented LRU and FIFO page replacement strategy. The below additional points were also implemented:
+# Storage Manager: 
+Implemented a storage manager that allows read/writing of blocks to/from a file on disk
+# Buffer Manager:
+Implemented a buffer manager that manages a buffer of blocks in memory including reading/flushing to disk and block replacement (flushing blocks to disk to make space for reading new blocks from disk). Implemented LRU and FIFO page replacement strategy. The below additional points were also implemented:
 # Multithreading: 
   a. Implemented the buffer manager program such that the program supports multithreading. 
   b. In order to implement Multithreading we used pthread.h which is a threading header used in linux systems. 
@@ -14,8 +16,9 @@ Assignments implemented in this course
   c. The code uses LRU strategy and finds the 3rd least recently used page from the buffer 
   d. Once the page is recognized, in case the page has fixcount is greater than zero the next least recently used page is replaced with the new page in the buffer.
 
-# Record Manager: Implement a simple record manager that allows navigation through records, and inserting and deleting records. The below additional points were also implemented:
-# Check primary key constraints:  
+# Record Manager: 
+Implement a simple record manager that allows navigation through records, and inserting and deleting records. The below additional points were also implemented:
+# Primary key constraints:  
   a. Implemented the record manager with primary key constraints.
   b. Created a key with one of the columns for e.g. "a"
   c. While trying to insert records in the table with same values in "a" the value in the column will be incremented such that duplicate records will not be inserted in the table. 
@@ -28,6 +31,8 @@ Assignments implemented in this course
   d. Based on the inputs from the user, a schema is created. 
   e. Once the schema is created the records are inserted in the table and displayed to the user as required. 
 
-# Handled memory issues in the test case by freeing the record and the rids created in the test case using free(record) and free(rid)
+# Handled memory issues:
+Handled memory issues in the test case by freeing the record and the rids created in the test case using free(record) and free(rid)
 
-# B+-Tree Index: Implement a disk-based B+-tree index structure
+# B+-Tree Index: 
+Implemented a disk-based B+-tree index structure
